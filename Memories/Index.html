@@ -21,6 +21,7 @@ body {
   color: #e5ebf3;
 }
 
+
 .slider {
   position: relative;
   width: 100vw;
@@ -36,14 +37,23 @@ body {
   height: 100%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
+  background-size: cover;
+  background-position: center
 }
 
 .slide.current {
   opacity: 1;
 }
 
+.slide video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-.slide:first-child {
+/*.slide:first-child {
   background: url("1.jpg") no-repeat
     center top/cover;
 }
@@ -116,7 +126,7 @@ body {
 .slide:nth-child(15) {
   background: url("15.mp4") no-repeat
     center top/cover;
-}
+}*/
 
 
 .buttons button#prev {
@@ -168,7 +178,7 @@ body {
 
 <body>
   <!-- partial:index.partial.html -->
-  <div class="slider">
+  <!--<div class="slider">
     <div class="slide current"></div>
     <div class="slide"></div>
     <div class="slide"></div>
@@ -185,7 +195,48 @@ body {
     <div class="slide"></div>
     <div class="slide"></div>
 
+  </div> -->
+  <div class="slider">
+  <div class="slide current" style="background-image: url('1.jpg');"></div>
+  <div class="slide" style="background-image: url('2.jpg');"></div>
+  <div class="slide">
+    <video src="3.mp4" autoplay loop muted></video>
   </div>
+  <div class="slide">
+    <video src="4.mp4" autoplay loop muted></video>
+  </div>
+  <div class="slide">
+    <video src="5.mp4" autoplay loop muted></video>
+  </div>
+  <div class="slide">
+    <video src="6.mp4" autoplay loop muted></video>
+  </div>
+  <div class="slide">
+    <video src="7.mp4" autoplay loop muted></video>
+  </div>
+  <div class="slide">
+    <video src="8.mp4" autoplay loop muted></video>
+  </div>
+  <div class="slide">
+    <video src="9.mp4" autoplay loop muted></video>
+  </div>
+  <div class="slide">
+    <video src="10.mp4" autoplay loop muted></video>
+  </div>
+  <div class="slide">
+    <video src="11.mp4" autoplay loop muted></video>
+  </div>
+  <div class="slide" style="background-image: url('12.jpg');"></div>
+  <div class="slide" style="background-image: url('13.jpg');"></div>
+  <div class="slide" style="background-image: url('14.jpg');"></div>
+  <div class="slide">
+    <video src="15.mp4" autoplay loop muted></video>
+  </div>
+    
+  <!-- Continue with other slides similarly -->
+</div>
+
+  
   <div class="buttons">
     <button id="prev"><i class="fas fa-arrow-left"></i></button>
     <button id="next"><i class="fas fa-arrow-right"></i></button>
