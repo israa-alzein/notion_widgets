@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -37,25 +37,20 @@ body {
   height: 100%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-  /*background-size: cover;
-  background-position: center*/
-  display: flex; /* Use flex to center the content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  overflow: hidden; /* Hide overflow */
+  background-size: cover;
+  background-position: center
 }
 
 .slide.current {
   opacity: 1;
 }
 
-.slide img, .slide video {
-  min-width: 100%; /* Make the video responsive */
-  min-height: 100%; /* Maintain aspect ratio */
-  /*position: absolute;*/
-  object-fit: cover;
-  /*top: 0;
-  left: 0;*/
+.slide video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*.slide:first-child {
@@ -183,7 +178,7 @@ body {
 
 <body>
   <!-- partial:index.partial.html -->
-  <!--<div class="slider">
+  <!-- <div class="slider">
     <div class="slide current"></div>
     <div class="slide"></div>
     <div class="slide"></div>
@@ -200,54 +195,55 @@ body {
     <div class="slide"></div>
     <div class="slide"></div>
 
-  </div> -->  -->
-  <!-- <div class="slider">
-  <div class="slide current" style="background-image: url('1.jpg');"></div>
-  <div class="slide" style="background-image: url('2.jpg');"></div>
-  <div class="slide">
-    <video src="3.mp4" autoplay loop></video>
-  </div>
-  <div class="slide">
-    <video src="4.mp4" autoplay loop></video>
-  </div>
-  <div class="slide">
-    <video src="5.mp4" autoplay loop></video>
-  </div>
-  <div class="slide">
-    <video src="6.mp4" autoplay loop></video>
-  </div>
-  <div class="slide">
-    <video src="7.mp4" autoplay loop></video>
-  </div>
-  <div class="slide">
-    <video src="8.mp4" autoplay loop></video>
-  </div>
-  <div class="slide">
-    <video src="9.mp4" autoplay loop></video>
-  </div>
-  <div class="slide">
-    <video src="10.mp4" autoplay loop></video>
-  </div>
-  <div class="slide">
-    <video src="11.mp4" autoplay loop></video>
-  </div>
-  <div class="slide" style="background-image: url('12.jpg');"></div>
-  <div class="slide" style="background-image: url('13.jpg');"></div>
-  <div class="slide" style="background-image: url('14.jpg');"></div>
-  <div class="slide">
-    <video src="15.mp4" autoplay loop></video>
-  </div>
+  </div> -->
+  
+  <div class="slider">
+    <div class="slide current" style="background-image: url('1.jpg');"></div>
+    <div class="slide" style="background-image: url('2.jpg');"></div>
+    <div class="slide">
+      <video src="3.mp4" autoplay loop controls></video>
+    </div>
+    <div class="slide">
+      <video src="4.mp4" autoplay loop controls></video>
+    </div>
+    <div class="slide">
+      <video src="5.mp4" autoplay loop controls></video>
+    </div>
+    <div class="slide">
+      <video src="6.mp4" autoplay loop controls></video>
+    </div>
+    <div class="slide">
+      <video src="7.mp4" autoplay loop controls></video>
+    </div>
+    <div class="slide">
+      <video src="8.mp4" autoplay loop controls></video>
+    </div>
+    <div class="slide">
+      <video src="9.mp4" autoplay loop controls></video>
+    </div>
+    <div class="slide">
+      <video src="10.mp4" autoplay loop controls></video>
+    </div>
+    <div class="slide">
+      <video src="11.mp4" autoplay loop controls></video>
+    </div>
+    <div class="slide" style="background-image: url('12.jpg');"></div>
+    <div class="slide" style="background-image: url('13.jpg');"></div>
+    <div class="slide" style="background-image: url('14.jpg');"></div>
+    <div class="slide">
+      <video src="15.mp4" autoplay loop controls></video>
+    </div>
     
   <!-- Continue with other slides similarly -->
-</div> -->
+</div> 
 
   
- <!-- <div class="buttons">
+ <div class="buttons">
     <button id="prev"><i class="fas fa-arrow-left"></i></button>
     <button id="next"><i class="fas fa-arrow-right"></i></button>
-  </div> -->
+  </div> 
   <!-- partial -->
-  <!-- <script>
+  <script>
     const slides = document.querySelectorAll(".slide");
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
@@ -292,18 +288,21 @@ body {
 
     if (auto) {
       slideInterval = setInterval(nextSlide, intervalTime);
-    } -->
+    } 
 
- <!--  </script>
+ </script>
 
 </body>
 
-</html> -->
+</html>
 
 
 
 
 
+
+
+<!--
 
 <!DOCTYPE html>
 <html lang="en">
@@ -426,11 +425,12 @@ body {
   </div>
     
     <!-- Add more unique slides as needed -->
-  </div>
+  </div> -->
+<!--
   <div class="buttons">
     <button id="prev"><i class="fas fa-arrow-left"></i></button>
     <button id="next"><i class="fas fa-arrow-right"></i></button>
-  </div>
+  </div> 
 
   <script>
     const slides = document.querySelectorAll(".slide");
@@ -483,4 +483,4 @@ body {
 </body>
 
 </html>
-
+-->
