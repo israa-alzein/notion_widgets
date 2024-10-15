@@ -1,4 +1,3 @@
-<!--
 <!DOCTYPE html>
 <html lang="en">
 
@@ -205,16 +204,16 @@
       align-items: center;
       /*position: relative;*/
     }
+
+
   </style>
 
 </head>  
 
-<body>   -->
+<body>   
   <!-- partial:index.partial.html -->
-<!--
-  <section class="gallery-container"></section>  -->
+  <section class="gallery-container"></section> 
   <!-- partial -->
-<!--
   <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js'></script>
 
@@ -334,7 +333,7 @@
 
 </body>    
 
-</html>     -->
+</html>     
 
 
 
@@ -342,135 +341,4 @@
 
 
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>React & CSS Grid Image Gallery</title>
-  
-  <!-- BaguetteBox CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-  
-  <style>
-    @charset "UTF-8";
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      font-size: 16px;
-    }
-
-    body {
-      font-family: helvetica;
-      background: linear-gradient(to right, #333333, #0e0e0e);
-      padding: 0;
-      margin: 0;
-    }
-
-    .gallery-container {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .gallery-container h1 {
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    @media (max-width: 768px) {
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      border: 5px solid #fff;
-      border-radius: 4px;
-      transition: transform 0.3s;
-    }
-
-    .gallery-grid img:hover {
-      transform: scale(1.05);
-    }
-  </style>
-</head>
-
-<body>
-  <section class="gallery-container">
-    <h1>Gallery</h1>
-    <div class="gallery-grid">
-      <!-- Images will be rendered here -->
-    </div>
-  </section>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-
-  <script>
-    const imgUrls = [
-      'IMG-20201022-WA0061.jpg',
-      'IMG-20230802-WA0067.jpg',
-      'Screenshot_20231221-231132_Instagram.jpg',
-      'IMG-20211107-WA0149.jpg',
-      'IMG-20211107-WA0150.jpg',
-      'IMG-20211127-WA0000.jpg',
-      'IMG-20221216-WA0076.jpg',
-      'IMG-20230806-WA0014.jpg',
-      'IMG_20230112_231420_265.jpg',
-      'Screenshot_20231221-231108_Instagram.jpg',
-      'Screenshot_20231221-231230_Instagram.jpg',
-      'Screenshot_20231221-231240_Instagram.jpg'
-    ];
-
-    class Gallery extends React.Component {
-      renderImageContent(src) {
-        return (
-          <div className="thumbnail">
-            <a className="lightbox" href={src}>
-              <img src={src} alt="Gallery image" />
-            </a>
-          </div>
-        );
-      }
-
-      render() {
-        return (
-          <div className="gallery-grid">
-            {imgUrls.map(this.renderImageContent)}
-          </div>
-        );
-      }
-    }
-
-    ReactDOM.render(<Gallery />, document.querySelector('.gallery-container'));
-
-    // Initialize BaguetteBox
-    baguetteBox.run('.gallery-grid');
-  </script>
-</body>
-
-</html>
 
